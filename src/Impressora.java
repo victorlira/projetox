@@ -5,6 +5,9 @@ public class Impressora {
 		if (texto == null) {
 			throw new IllegalArgumentException("texto == null");
 		}
+		if (texto.length() == 0) {
+			throw new IllegalArgumentException("texto.length() == 0");
+		}
 		System.out.println(texto);
 	}
 }
